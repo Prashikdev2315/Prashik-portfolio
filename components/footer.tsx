@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail, Heart } from "lucide-react"
 const socialLinks = [
   {
     icon: Linkedin,
-    href: "https://linkedin.com/in/prashik-kadam",
+    href: "https://www.linkedin.com/in/prashik-kadam-a489a8285/",
     label: "LinkedIn",
   },
   {
