@@ -34,7 +34,7 @@ export function HeroSection() {
         </span>
         <div className="w-px h-16 bg-border" />
         <a
-          href="https://linkedin.com/in/prashik-kadam"
+          href="https://www.linkedin.com/in/prashik-kadam-a489a8285/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-primary transition-colors"
@@ -118,7 +118,7 @@ export function HeroSection() {
         {/* Mobile Social Links */}
         <div className="flex items-center justify-center gap-6 mt-12 lg:hidden animate-in fade-in slide-in-from-bottom-4 duration-700 delay-700">
           <a
-            href="https://linkedin.com/in/prashik-kadam"
+            href="https://www.linkedin.com/in/prashik-kadam-a489a8285/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors"
