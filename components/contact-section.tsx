@@ -25,7 +25,7 @@ const contactInfo = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    value: "linkedin.com/in/prashik-kadam",
+    value: "linkedin.com/in/prashik-kadam-a489a8285",
     href: "https://www.linkedin.com/in/prashik-kadam-a489a8285/",
   },
   {
