@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { GraduationCap, Calendar, MapPin } from "lucide-react"
+import { GraduationCap, Calendar, MapPin } from "lucide-react";
 
 const education = [
   {
@@ -8,20 +8,21 @@ const education = [
     institution: "PDPM IIITDM, Jabalpur",
     location: "Jabalpur, Madhya Pradesh",
     period: "2023 - Present",
-    description: "Pursuing undergraduate studies with focus on AI/ML, Data Analytics, and Software Engineering. Active participant in hackathons and technical workshops.",
+    description:
+      "Pursuing undergraduate studies with focus on AI/ML, Data Analytics, and Software Engineering. Active participant in hackathons and technical workshops.",
     current: true,
   },
   {
     degree: "Higher Secondary (Class XII - Science Stream)",
     institution: "Maharashtra State Board",
     location: "Maharashtra, India",
-    period: "2023",
-    description: "Completed higher secondary education with a strong foundation in Mathematics, Physics, and Computer Science.",
+    period: "2020 - 2022",
+    description:
+      "Completed higher secondary education with a strong foundation in Mathematics, Physics, and Computer Science.",
     percentage: "84.6%",
     current: false,
   },
-]
-
+];
 export function EducationSection() {
   return (
     <section id="education" className="py-20 md:py-32 bg-card/30 relative">
@@ -52,14 +53,18 @@ export function EducationSection() {
                 <div className="absolute left-4 md:left-1/2 w-3 h-3 bg-primary rounded-full transform -translate-x-1/2 mt-8 md:mt-6 ring-4 ring-background" />
 
                 {/* Content Card */}
-                <div className={`ml-12 md:ml-0 md:w-1/2 ${index % 2 === 0 ? "md:pr-12" : "md:pl-12"}`}>
+                <div
+                  className={`ml-12 md:ml-0 md:w-1/2 ${
+                    index % 2 === 0 ? "md:pr-12" : "md:pl-12"
+                  }`}
+                >
                   <div className="bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all duration-300">
                     {item.current && (
                       <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full mb-4">
                         Current
                       </span>
                     )}
-                    
+
                     <div className="flex items-start gap-4 mb-4">
                       <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
                         <GraduationCap className="w-6 h-6 text-primary" />
@@ -68,7 +73,9 @@ export function EducationSection() {
                         <h3 className="text-lg font-bold text-foreground leading-tight">
                           {item.degree}
                         </h3>
-                        <p className="text-primary font-medium">{item.institution}</p>
+                        <p className="text-primary font-medium">
+                          {item.institution}
+                        </p>
                       </div>
                     </div>
 
@@ -89,8 +96,12 @@ export function EducationSection() {
 
                     {item.percentage && (
                       <div className="mt-4 pt-4 border-t border-border">
-                        <span className="text-sm text-muted-foreground">Percentage: </span>
-                        <span className="text-lg font-bold text-accent">{item.percentage}</span>
+                        <span className="text-sm text-muted-foreground">
+                          Percentage:{" "}
+                        </span>
+                        <span className="text-lg font-bold text-accent">
+                          {item.percentage}
+                        </span>
                       </div>
                     )}
                   </div>
@@ -104,5 +115,5 @@ export function EducationSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
